@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Philip Goto</title>
+	<style>
+		* {
+    		transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+		}
+
+		body {
+			background-color: #FAFAFA;
+			margin: 0;
+			font-family: 'Inter', serif;
+			color: rgba(0, 0, 0, 0.60);
+			word-wrap: break-word;
+			user-select: none;
+			line-height: 1.5;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: inherit;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			color:rgba(0, 0, 0, 0.87);
+			margin: 16px 16px 0px 16px;
+			line-height: 1;
+		}
+
+		h1 { font-size: 2.6em }
+		h2 { font-size: 1.8em }
+		h3 { font-size: 1.4em }
+		h4 { font-size: 1.2em }
+		h5 { font-size: 1.1em }
+		h6 { font-size: 1.05em }
+
+		p {
+			margin: 16px 16px;
+		}
+
+		.content {
+			margin: 48px 0;
+    	overflow: scroll;
+			text-align: center;
+		}
+
+		.section {
+			margin: 48px auto;
+			max-width: 720px;
+			text-align: initial;
+		}
+
+		.card {
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+			background-color: #FFFFFF;
+			border-radius: 16px;
+			margin: 24px 0;
+			overflow: hidden;
+		}
+
+		.subtitle {
+			margin: 4px 16px 16px 16px;
+		}
+
+		.chip {
+			display: inline-flex;
+			align-items:center;
+			background-color: #FFF;
+			border: 2px solid rgba(0, 0, 0, 0.1);
+			color:rgba(0, 0, 0, 0.87);
+			border-radius: 24px;
+			padding: 0.5em 0.75em;
+			margin: 4px;
+			line-height: 1;
+		}
+		.chip > img {
+			height: 24px;
+		}
+		.chip > span::before {
+			content: '\00a0';
+		}
+
+		.title {
+			font-size: 3em;
+			color: rgba(0, 0, 0, 0.87);
+		}
+
+		.centered {
+			text-align: center;
+		}
+		
+		.faded {
+		  color: rgba(0, 0, 0, 0.6)
+		}
+
+		.avatar {
+			border-radius: 50%;
+			width: 256px;
+			height: 256px;
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+
+		@media (max-width: 720px) {
+			.card { border-radius: 0px }
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="section centered">
+			<img class="avatar" src="https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=512&r=g">
+			<h1>Philip Goto</h1>
+			<p>Diemen, the Netherlands</p>
+			<p>MSc Artificial Intelligence · BSc Computer Science</p>
+			<p>Mostly interested in programming, interface design and deep learning.<br>I like making good-quality products and exploring new possibilities.</p>
+			<p><!--
+			---><a href="https://www.linkedin.com/in/philipgoto" class="chip"><img src="https://cdn.simpleicons.org/linkedin"><span>LinkedIn</span></a><!---
+			---><a href="https://gitlab.com/philip.goto" class="chip"><img src="https://cdn.simpleicons.org/gitlab"><span>GitLab</span></a><!---
+			---><a href="https://github.com/flipflop97" class="chip"><img src="https://cdn.simpleicons.org/github"><span>GitHub</span></a><!---
+			---><a href="mailto:philip.goto@gmail.com" class="chip"><img src="https://cdn.simpleicons.org/gmail"><span>E-mail</span></a><!---
+			---><a href="https://t.me/flipflop97" class="chip"><img src="https://cdn.simpleicons.org/telegram"><span>Telegram</span></a><!---
+		---></p>
+		</div>
+		<div class="section">
+		  <h2 class="faded centered">Now</h2>
+			<h2 class="faded centered">2023</h2>
+			<div class="card">
+				<h3>MSc Artificial Intelligence</h3>
+				<p class="subtitle">Universiteit van Amsterdam</p>
+				<p>GPA: 8.0 (not final yet)<br>Thesis: Active learning for imbalanced image classification</p>
+			</div>
+			<h2 class="faded centered">2019</h2>
+			<div class="card">
+				<h3>BSc Computer Science</h3>
+				<p class="subtitle">Universiteit van Amsterdam</p>
+				<p>GPA: 7.6<br>Minor: Self-assembled, mostly AI courses<br>Thesis: Deep learning in bachelor education at the UvA</p>
+			</div>
+			<h2 class="faded centered">2015</h2>
+		</div>
+	</div>
+</body>
+</html>
