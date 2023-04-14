@@ -26,6 +26,7 @@
 			--shadow-color: rgba(0, 0, 0, 0.15);
 			
 			--hover-filter: brightness(95%);
+			--icon-filter: none;
 			
 			--default-transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 			
@@ -100,6 +101,7 @@
 			display: inline-block;
 			white-space: nowrap;
 			overflow: hidden;
+			filter: var(--icon-filter);
 		}
 
 		.subtitle {
@@ -176,10 +178,7 @@
 				--border-color: rgba(255, 255, 255, 0.1);
 				
 				--hover-filter: contrast(90%) brightness(120%);
-			}
-			
-			.icon {
-				filter: contrast(50%) brightness(200%);
+				--icon-filter: contrast(50%) brightness(200%)
 			}
 		}
 	</style>
