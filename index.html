@@ -133,7 +133,8 @@
 			line-height: 24px;
 		}
 		.chip > span::before {
-			content: '\00a0\00a0';
+			content: '  ';
+			white-space: pre-wrap;
 		}
 		.chip:hover {
 			filter: var(--hover-filter);
@@ -188,6 +189,16 @@
 
 				--hover-filter: contrast(90%) brightness(120%);
 				--icon-filter: contrast(25%) brightness(150%)
+			}
+		}
+
+		@media print {
+			a[href]::after{
+				content: ' (' attr(href) ')';
+				white-space: pre-wrap;
+				display: inline-block;
+				text-decoration: none;
+				font-weight: normal;
 			}
 		}
 	</style>
