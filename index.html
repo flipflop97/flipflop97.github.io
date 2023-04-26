@@ -46,6 +46,7 @@
 			background-image: linear-gradient(var(--background-pattern-color) 2px, transparent 2px), linear-gradient(90deg, var(--background-pattern-color) 2px, transparent 2px), linear-gradient(var(--background-pattern-color) 1px, transparent 1px), linear-gradient(90deg, var(--background-pattern-color) 1px, transparent 1px);
 			background-size: 48px 48px, 48px 48px, 12px 12px, 12px 12px;
 			background-position: -1px -1px, -1px -1px, -0.5px -0.5px, -0.5px -0.5px;
+			background-repeat: repeat;
 			background-attachment: fixed;
 			margin: 96px 0;
 			color: var(--text-color);
@@ -164,14 +165,6 @@
 			overflow: hidden;
 		}
 
-		@media (max-width: 752px) {
-			section { margin: 64px 16px }
-		}
-		@media (max-width: 512px) {
-			section { margin: 64px 0 }
-			.card { border-radius: 0px }
-		}
-
 		@media (max-width: 256px) {
 			.avatar {
 				transform: translate(calc(50vw - 50%));
@@ -193,6 +186,10 @@
 		}
 
 		@media print {
+			body {
+				background: none;
+			}
+
 			a[href]::after{
 				content: ' (' attr(href) ')';
 				white-space: pre-wrap;
@@ -226,72 +223,75 @@
 	---></p>
 	</header>
 	<main>
-		<section><h2>About</h2><div class="card">
-			<p>I love making good-quality and easy to use software. I'm especially interested in software engineering, interface design and deep learning, but I like learning new things and exploring new possibilities.</p>
-			<p>I have worked with and gained experience with many programming and markup languages, both during my studies and in my free time. I joined a few online programming contests, like the PROG-A-THON of my study association via, and the Advent of Code. I also contributed to open source projects in the form of bug reports, merge requests, translations, but also personal projects; see my GitHub/GitLab profiles for some things I worked on. Because of my broad knowledge in this field, learning new languages or technologies is a piece of cake for me! Take a look at technologies I worked with:</p>
-			<p class="centered">
-				<img class="icon" src="https://cdn.simpleicons.org/dotnet" title=".NET" alt=".NET icon">
-				<img class="icon" src="https://cdn.simpleicons.org/anaconda" title="Anaconda" alt="Anaconda icon">
-				<img class="icon" src="https://cdn.simpleicons.org/androidstudio" title="Android Studio" alt="Android Studio icon">
-				<img class="icon" src="https://cdn.simpleicons.org/archlinux" title="Arch Linux" alt="Arch Linux icon">
-				<img class="icon" src="https://cdn.simpleicons.org/blender" title="Blender" alt="Blender icon">
-				<img class="icon" src="https://cdn.simpleicons.org/gnubash" title="Bash" alt="Bash icon">
-				<img class="icon" src="https://cdn.simpleicons.org/c" title="C" alt="C icon">
-				<img class="icon" src="https://cdn.simpleicons.org/c++" title="C++" alt="C++ icon">
-				<img class="icon" src="https://cdn.simpleicons.org/googlecolab" title="Colaboratory" alt="Colaboratory icon">
-				<img class="icon" src="https://cdn.simpleicons.org/condaforge" title="Conda-Forge" alt="Conda-Forge icon">
-				<img class="icon" src="https://cdn.simpleicons.org/css3" title="CSS3" alt="CSS3 icon">
-				<img class="icon" src="https://cdn.simpleicons.org/django" title="Django" alt="Django icon">
-				<img class="icon" src="https://cdn.simpleicons.org/erlang" title="Erlang" alt="Erlang icon">
-				<img class="icon" src="https://cdn.simpleicons.org/fedora" title="Fedora" alt="Fedora icon">
-				<img class="icon" src="https://cdn.simpleicons.org/flathub" title="Flathub" alt="Flathub icon">
-				<img class="icon" src="https://cdn.simpleicons.org/flatpak" title="Flatpak" alt="Flatpak icon">
-				<img class="icon" src="https://cdn.simpleicons.org/flask" title="Flask" alt="Flask icon">
-				<img class="icon" src="https://cdn.simpleicons.org/gnome" title="GNOME" alt="GNOME icon">
-				<img class="icon" src="https://cdn.simpleicons.org/git" title="Git" alt="Git icon">
-				<img class="icon" src="https://cdn.simpleicons.org/github" title="GitHub" alt="GitHub icon">
-				<img class="icon" src="https://cdn.simpleicons.org/gitlab" title="GitLab" alt="GitLab icon">
-				<img class="icon" src="https://cdn.simpleicons.org/go" title="Go" alt="Go icon">
-				<img class="icon" src="https://cdn.simpleicons.org/gtk" title="GTK" alt="GTK icon">
-				<img class="icon" src="https://cdn.simpleicons.org/haskell" title="Haskell" alt="Haskell icon">
-				<img class="icon" src="https://cdn.simpleicons.org/html5" title="HTML5" alt="HTML5 icon">
-				<img class="icon" src="https://cdn.simpleicons.org/inkscape" title="Inkscape" alt="Inkscape icon">
-			<!--<img class="icon" src="https://cdn.simpleicons.org/java" title="Java" alt="Java icon">-->
-				<img class="icon" src="https://cdn.simpleicons.org/javascript" title="JavaScript" alt="JavaScript icon">
-				<img class="icon" src="https://cdn.simpleicons.org/json" title="JSON" alt="JSON icon">
-				<img class="icon" src="https://cdn.simpleicons.org/jupyter" title="Jupyter" alt="Jupyter icon">
-				<img class="icon" src="https://cdn.simpleicons.org/latex" title="LaTeX" alt="LaTeX icon">
-				<img class="icon" src="https://cdn.simpleicons.org/letsencrypt" title="Let's Encrypt" alt="Let's Encrypt icon">
-				<img class="icon" src="https://cdn.simpleicons.org/linux" title="Linux" alt="Linux icon">
-				<img class="icon" src="https://cdn.simpleicons.org/mariadb" title="MariaDB" alt="MariaDB icon">
-				<img class="icon" src="https://cdn.simpleicons.org/markdown" title="Markdown" alt="Markdown icon">
-				<img class="icon" src="https://cdn.simpleicons.org/mysql" title="MySQL" alt="MySQL icon">
-				<img class="icon" src="https://cdn.simpleicons.org/numpy" title="NumPy" alt="NumPy icon">
-				<img class="icon" src="https://cdn.simpleicons.org/opencv" title="OpenCV" alt="OpenCV icon">
-				<img class="icon" src="https://cdn.simpleicons.org/openjdk/black" title="OpenJDK" alt="OpenJDK icon">
-				<img class="icon" src="https://cdn.simpleicons.org/overleaf" title="Overleaf" alt="Overleaf icon">
-				<img class="icon" src="https://cdn.simpleicons.org/php" title="PHP" alt="PHP icon">
-				<img class="icon" src="https://cdn.simpleicons.org/phpmyadmin" title="phpMyAdmin" alt="phpMyAdmin icon">
-				<img class="icon" src="https://cdn.simpleicons.org/pypi" title="PyPI" alt="PyPI icon">
-				<img class="icon" src="https://cdn.simpleicons.org/pypy" title="PyPy" alt="PyPy icon">
-				<img class="icon" src="https://cdn.simpleicons.org/python" title="Python" alt="Python icon">
-				<img class="icon" src="https://cdn.simpleicons.org/pytorch" title="PyTorch" alt="PyTorch icon">
-				<img class="icon" src="https://cdn.simpleicons.org/pytorchlightning" title="PyTorch Lightning" alt="PyTorch Lightning icon">
-				<img class="icon" src="https://cdn.simpleicons.org/rust" title="Rust" alt="Rust icon">
-				<img class="icon" src="https://cdn.simpleicons.org/scikitlearn" title="scikit-learn" alt="scikit-learn icon">
-				<img class="icon" src="https://cdn.simpleicons.org/scipy" title="SciPy" alt="SciPy icon">
-				<img class="icon" src="https://cdn.simpleicons.org/spaCy" title="spaCy" alt="spaCy icon">
-				<img class="icon" src="https://cdn.simpleicons.org/svg" title="SVG" alt="SVG icon">
-				<img class="icon" src="https://cdn.simpleicons.org/telegram" title="Telegram" alt="Telegram icon">
-				<img class="icon" src="https://cdn.simpleicons.org/tqdm" title="tqdm" alt="tqdm icon">
-				<img class="icon" src="https://cdn.simpleicons.org/ubuntu" title="Ubuntu" alt="Ubuntu icon">
-				<img class="icon" src="https://cdn.simpleicons.org/unity/black" title="Unity" alt="Unity icon">
-				<img class="icon" src="https://cdn.simpleicons.org/visualstudio" title="Visual Studio" alt="Visual Studio icon">
-				<img class="icon" src="https://cdn.simpleicons.org/weblate" title="Weblate" alt="Weblate icon">
-				<img class="icon" src="https://cdn.simpleicons.org/weightsandbiases" title="Weights & Biases" alt="Weights & Biases icon">
-				<img class="icon" src="https://cdn.simpleicons.org/wireshark" title="Wireshark" alt="Wireshark icon">
-				<img class="icon" src="https://cdn.simpleicons.org/yaml" title="YAML" alt="YAML icon">
-			</p></div>
+		<section>
+			<h2>About</h2>
+			<div class="card">
+				<p>I love making good-quality and easy to use software. I'm especially interested in software engineering, interface design and deep learning, but I like learning new things and exploring new possibilities.</p>
+				<p>I have worked with and gained experience with many programming and markup languages, both during my studies and in my free time. I joined a few online programming contests, like the PROG-A-THON of my study association via, and the Advent of Code. I also contributed to open source projects in the form of bug reports, merge requests, translations, but also personal projects; see my GitHub/GitLab profiles for some things I worked on. Because of my broad knowledge in this field, learning new languages or technologies is a piece of cake for me! Take a look at technologies I worked with:</p>
+				<p class="centered">
+					<img class="icon" src="https://cdn.simpleicons.org/dotnet" title=".NET" alt=".NET icon">
+					<img class="icon" src="https://cdn.simpleicons.org/anaconda" title="Anaconda" alt="Anaconda icon">
+					<img class="icon" src="https://cdn.simpleicons.org/androidstudio" title="Android Studio" alt="Android Studio icon">
+					<img class="icon" src="https://cdn.simpleicons.org/archlinux" title="Arch Linux" alt="Arch Linux icon">
+					<img class="icon" src="https://cdn.simpleicons.org/blender" title="Blender" alt="Blender icon">
+					<img class="icon" src="https://cdn.simpleicons.org/gnubash" title="Bash" alt="Bash icon">
+					<img class="icon" src="https://cdn.simpleicons.org/c" title="C" alt="C icon">
+					<img class="icon" src="https://cdn.simpleicons.org/c++" title="C++" alt="C++ icon">
+					<img class="icon" src="https://cdn.simpleicons.org/googlecolab" title="Colaboratory" alt="Colaboratory icon">
+					<img class="icon" src="https://cdn.simpleicons.org/condaforge" title="Conda-Forge" alt="Conda-Forge icon">
+					<img class="icon" src="https://cdn.simpleicons.org/css3" title="CSS3" alt="CSS3 icon">
+					<img class="icon" src="https://cdn.simpleicons.org/django" title="Django" alt="Django icon">
+					<img class="icon" src="https://cdn.simpleicons.org/erlang" title="Erlang" alt="Erlang icon">
+					<img class="icon" src="https://cdn.simpleicons.org/fedora" title="Fedora" alt="Fedora icon">
+					<img class="icon" src="https://cdn.simpleicons.org/flathub" title="Flathub" alt="Flathub icon">
+					<img class="icon" src="https://cdn.simpleicons.org/flatpak" title="Flatpak" alt="Flatpak icon">
+					<img class="icon" src="https://cdn.simpleicons.org/flask" title="Flask" alt="Flask icon">
+					<img class="icon" src="https://cdn.simpleicons.org/gnome" title="GNOME" alt="GNOME icon">
+					<img class="icon" src="https://cdn.simpleicons.org/git" title="Git" alt="Git icon">
+					<img class="icon" src="https://cdn.simpleicons.org/github" title="GitHub" alt="GitHub icon">
+					<img class="icon" src="https://cdn.simpleicons.org/gitlab" title="GitLab" alt="GitLab icon">
+					<img class="icon" src="https://cdn.simpleicons.org/go" title="Go" alt="Go icon">
+					<img class="icon" src="https://cdn.simpleicons.org/gtk" title="GTK" alt="GTK icon">
+					<img class="icon" src="https://cdn.simpleicons.org/haskell" title="Haskell" alt="Haskell icon">
+					<img class="icon" src="https://cdn.simpleicons.org/html5" title="HTML5" alt="HTML5 icon">
+					<img class="icon" src="https://cdn.simpleicons.org/inkscape" title="Inkscape" alt="Inkscape icon">
+				<!--<img class="icon" src="https://cdn.simpleicons.org/java" title="Java" alt="Java icon">-->
+					<img class="icon" src="https://cdn.simpleicons.org/javascript" title="JavaScript" alt="JavaScript icon">
+					<img class="icon" src="https://cdn.simpleicons.org/json" title="JSON" alt="JSON icon">
+					<img class="icon" src="https://cdn.simpleicons.org/jupyter" title="Jupyter" alt="Jupyter icon">
+					<img class="icon" src="https://cdn.simpleicons.org/latex" title="LaTeX" alt="LaTeX icon">
+					<img class="icon" src="https://cdn.simpleicons.org/letsencrypt" title="Let's Encrypt" alt="Let's Encrypt icon">
+					<img class="icon" src="https://cdn.simpleicons.org/linux" title="Linux" alt="Linux icon">
+					<img class="icon" src="https://cdn.simpleicons.org/mariadb" title="MariaDB" alt="MariaDB icon">
+					<img class="icon" src="https://cdn.simpleicons.org/markdown" title="Markdown" alt="Markdown icon">
+					<img class="icon" src="https://cdn.simpleicons.org/mysql" title="MySQL" alt="MySQL icon">
+					<img class="icon" src="https://cdn.simpleicons.org/numpy" title="NumPy" alt="NumPy icon">
+					<img class="icon" src="https://cdn.simpleicons.org/opencv" title="OpenCV" alt="OpenCV icon">
+					<img class="icon" src="https://cdn.simpleicons.org/openjdk/black" title="OpenJDK" alt="OpenJDK icon">
+					<img class="icon" src="https://cdn.simpleicons.org/overleaf" title="Overleaf" alt="Overleaf icon">
+					<img class="icon" src="https://cdn.simpleicons.org/php" title="PHP" alt="PHP icon">
+					<img class="icon" src="https://cdn.simpleicons.org/phpmyadmin" title="phpMyAdmin" alt="phpMyAdmin icon">
+					<img class="icon" src="https://cdn.simpleicons.org/pypi" title="PyPI" alt="PyPI icon">
+					<img class="icon" src="https://cdn.simpleicons.org/pypy" title="PyPy" alt="PyPy icon">
+					<img class="icon" src="https://cdn.simpleicons.org/python" title="Python" alt="Python icon">
+					<img class="icon" src="https://cdn.simpleicons.org/pytorch" title="PyTorch" alt="PyTorch icon">
+					<img class="icon" src="https://cdn.simpleicons.org/pytorchlightning" title="PyTorch Lightning" alt="PyTorch Lightning icon">
+					<img class="icon" src="https://cdn.simpleicons.org/rust" title="Rust" alt="Rust icon">
+					<img class="icon" src="https://cdn.simpleicons.org/scikitlearn" title="scikit-learn" alt="scikit-learn icon">
+					<img class="icon" src="https://cdn.simpleicons.org/scipy" title="SciPy" alt="SciPy icon">
+					<img class="icon" src="https://cdn.simpleicons.org/spaCy" title="spaCy" alt="spaCy icon">
+					<img class="icon" src="https://cdn.simpleicons.org/svg" title="SVG" alt="SVG icon">
+					<img class="icon" src="https://cdn.simpleicons.org/telegram" title="Telegram" alt="Telegram icon">
+					<img class="icon" src="https://cdn.simpleicons.org/tqdm" title="tqdm" alt="tqdm icon">
+					<img class="icon" src="https://cdn.simpleicons.org/ubuntu" title="Ubuntu" alt="Ubuntu icon">
+					<img class="icon" src="https://cdn.simpleicons.org/unity/black" title="Unity" alt="Unity icon">
+					<img class="icon" src="https://cdn.simpleicons.org/visualstudio" title="Visual Studio" alt="Visual Studio icon">
+					<img class="icon" src="https://cdn.simpleicons.org/weblate" title="Weblate" alt="Weblate icon">
+					<img class="icon" src="https://cdn.simpleicons.org/weightsandbiases" title="Weights & Biases" alt="Weights & Biases icon">
+					<img class="icon" src="https://cdn.simpleicons.org/wireshark" title="Wireshark" alt="Wireshark icon">
+					<img class="icon" src="https://cdn.simpleicons.org/yaml" title="YAML" alt="YAML icon">
+				</p>
+			</div>
 		</section>
 		<section>
 			<h2 class="">Career</h2>
