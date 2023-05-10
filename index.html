@@ -25,6 +25,7 @@
 			--header-color: rgba(0, 0, 0, 0.85);
 			--border-color: rgba(0, 0, 0, 0.1);
 			--shadow-color: rgba(0, 0, 0, 0.15);
+			--link-color: #3584E4;
 
 			--hover-filter: brightness(95%);
 			--icon-filter: none;
@@ -55,7 +56,7 @@
 		}
 
 		a {
-			color: var(--header-color);
+			color: var(--link-color);
 			transition: var(--default-transition);
 		}
 
@@ -127,6 +128,7 @@
 			padding: 8px 16px;
 			margin: 4px;
 			line-height: 1;
+			color: var(--header-color);
 		}
 		.chip > img {
 			height: 24px;
@@ -227,7 +229,7 @@
 			<h2>About</h2>
 			<div class="card">
 				<p>Hi, I'm Philip Goto! I'm a passionate programmer with broad knowledge about AI, graphic design and more. I love making good-quality and easy to use software. I'm especially interested in software engineering, interface design and deep learning, but I like learning new things and exploring new possibilities.</p>
-				<p>I have worked with and gained experience with many programming and markup languages, both during my studies and in my free time. I joined a few online programming contests, like the PROG-A-THON of my study association via, and the Advent of Code. I also contributed to open source projects in the form of bug reports, merge requests, translations, package maintenance, but also personal projects; see my GitHub/GitLab profiles for some things I worked on. Because of my broad knowledge in this field, learning new languages or technologies is a piece of cake for me! Take a look at technologies I worked with:</p>
+				<p>I have worked with and gained experience with many programming and markup languages, both during my studies and in my free time. I joined a few online programming contests, like the PROG-A-THON of my study association via, and the Advent of Code. I also contributed to open source projects in the form of bug reports, merge requests, translations, package maintenance, but also personal projects. Because of my broad knowledge in this field, learning new languages or technologies is a piece of cake for me! Take a look at technologies I worked with:</p>
 				<p class="centered">
 					<img class="icon" src="https://cdn.simpleicons.org/dotnet" title=".NET" alt=".NET icon">
 					<img class="icon" src="https://cdn.simpleicons.org/anaconda" title="Anaconda" alt="Anaconda icon">
@@ -314,13 +316,13 @@
 			</div>
 		</section>
 		<section>
-			<h2 class="">Projects</h2>
+			<h2 class="">Portfolio</h2>
 			<div class="card">
 				<h3>Personal projects</h3>
-				<p>I have written two plugins for the app GNOME Crosswords. These plug-ins scrape crosswords, cryptic crosswords, arrowwords and filippines from existing websites, convert them to the internally used ipuz format and display them in the apps interface. Currently, these plugins together support 30 different types of puzzles from Dutch and Flemish websites.</p>
-				<p>I have written a web interface for package management of Arch Linux. This locally deployed website lets the user visually discover, install, and remove packages through the browser.</p>
-				<p>I have designed and published an icon pack of 550 icons for Linux with accompanying website. These are designed in the a combined style of Material Design and my own input.</p>
-				<p>I have written several Telegram bots. One example is a bot that can find available classrooms at the UvA that can be used as workspaces.</p>
+				<p>I have written two plugins for the app GNOME Crosswords. These plug-ins scrape crosswords, cryptic crosswords, arrowwords and filippines from existing websites, convert them to the internally used ipuz format and display them in the apps interface. Currently, these plugins together support 30 different types of puzzles from Dutch and Flemish websites.<br>→ <a target="_blank" href="https://gitlab.gnome.org/philip.goto/puzzle-sets-keesing">Keesing puzzle sets</a> · <a target="_blank" href="https://gitlab.gnome.org/philip.goto/puzzle-sets-pzzl">pzzl puzzle sets</a></p>
+				<p>I have written a web interface for package management of Arch Linux. This locally deployed website lets the user visually discover, install, and remove packages through the browser.<br>→ <a target="_blank" href="https://github.com/flipflop97/WebMan">WebMan</a></p>
+				<p>I have designed and published an icon pack of 550 icons for Linux with accompanying website. These are designed in the a combined style of Material Design and my own input.<br>→ <a target="_blank" href="/Mato">Mato</a></p>
+				<p>I have written several Telegram bots. One example is a bot that can find available classrooms at the UvA that can be used as workspaces. Another one is a Telegram variant of the formerly popular Twitch Plays Pokémon.</p>
 			</div>
 			<div class="card">
 				<h3>Study-related projects</h3>
@@ -329,8 +331,8 @@
 			</div>
 			<div class="card">
 				<h3>Contributions</h3>
-				<p>I have made many contributions to open source projects. This is in the form of bug reports, merge requests for features and bug fixes, and Dutch translations. The bulk of the projects I have contributed to fall under the GNOME platform, but I have also contributed to some other projects.</p>
-				<p>I have managed over 50 packages in total in the Arch User Repository, some of which have moved on to the official Arch Linux repositories. I am currently managing around 20 packages.</p>
+				<p>I have made many contributions to open source projects. This is in the form of bug reports, merge requests for features and bug fixes, and Dutch translations. The bulk of the projects I have contributed to fall under the GNOME platform, but I have also contributed to some other projects. See my GitHub/GitLab profiles for things I worked on.</p>
+				<p>I have managed over 50 packages in total in the Arch User Repository, some of which have moved on to the official Arch Linux repositories. I am currently managing around 20 packages.<br>→ <a target="_blank" href="https://aur.archlinux.org/packages?SeB=M&K=flipflop97">Currently maintained AUR packages</a></p>
 			</div>
 			<div class="card">
 				<h3>Events</h3>
