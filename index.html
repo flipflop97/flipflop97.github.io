@@ -83,6 +83,8 @@
 			break-inside: avoid;
 		}
 
+		/* Metadata: https://unpkg.com/simple-icons/_data/simple-icons.json */
+		/* Icons:    https://unpkg.com/simple-icons/icons/microsoftazure.svg */
 		ul.tags {
 			padding: 0;
 			text-decoration: inherit;
@@ -103,6 +105,12 @@
 			height: 16px;
 			width: 16px;
 			line-height: 16px;
+		}
+		ul.tags > li > img::before {
+			height: 16px;
+			width: 16px;
+			line-height: 16px;
+			display: inline-block;
 		}
 		ul.tags > li > span::before {
 			content: ' ';
@@ -132,9 +140,9 @@
 
 		.icon {
 			display: inline-block;
-			white-space: nowrap;
 			overflow: hidden;
 			filter: var(--icon-filter);
+			font-weight: bold;
 		}
 
 		.subtitle {
@@ -259,80 +267,7 @@
 			<h2>About</h2>
 			<div class="card">
 				<p>Hi, I'm Philip Goto! I'm a passionate programmer with broad knowledge about Software and (cloud) platform engineering, AI, graphic design and more. I love making good-quality and easy to use software. I like learning new things and broadening my knowledge even more.</p>
-				<p>I have worked with and gained experience with many programming languages and frameworks, during my career, studies and in my free time. I joined a few online programming contests, like the PROG-A-THON of my study association via, and the Advent of Code. I also contributed to open source projects in the form of bug reports, merge requests, translations, package maintenance, but also personal projects; see my GitHub/GitLab profiles for some things I worked on. Because of my broad knowledge in this field, learning new languages or technologies is a piece of cake for me!<br>Take a look at technologies I worked with:</p>
-				<ul class="centered tags"><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/dotnet" alt=".NET icon"><span>.NET</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/microsoftazure" alt="Microsoft Azure icon"><span>Microsoft Azure</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/azuredevops" alt="Azure DevOps icon"><span>Azure DevOps</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/azurefunctions" alt="Azure Functions icon"><span>Azure Functions</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/azurepipelines" alt="Azure Pipelines icon"><span>Azure Pipelines</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/anaconda" alt="Anaconda icon"><span>Anaconda</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/androidstudio" alt="Android Studio icon"><span>Android Studio</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/archlinux" alt="Arch Linux icon"><span>Arch Linux</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/argo" alt="ArgoCD icon"><span>ArgoCD</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/gnubash" alt="Bash icon"><span>Bash</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/c" alt="C icon"><span>C</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/csharp" alt="C# icon"><span>C#</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/c++" alt="C++ icon"><span>C++</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/googlecolab" alt="Colaboratory icon"><span>Colaboratory</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/condaforge" alt="Conda-Forge icon"><span>Conda-Forge</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/css3" alt="CSS3 icon"><span>CSS3</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/django" alt="Django icon"><span>Django</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/erlang" alt="Erlang icon"><span>Erlang</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/flathub" alt="Flathub icon"><span>Flathub</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/flatpak" alt="Flatpak icon"><span>Flatpak</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/flask" alt="Flask icon"><span>Flask</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/gnome" alt="GNOME icon"><span>GNOME</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/git" alt="Git icon"><span>Git</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/github" alt="GitHub icon"><span>GitHub</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/gitlab" alt="GitLab icon"><span>GitLab</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/go" alt="Go icon"><span>Go</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/grafana" alt="Grafana icon"><span>Grafana</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/haskell" alt="Haskell icon"><span>Haskell</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/html5" alt="HTML5 icon"><span>HTML5</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/inkscape" alt="Inkscape icon"><span>Inkscape</span></li><!--
-					---><li><img class="icon" src="https://img.icons8.com/color/64/java-coffee-cup-logo" alt="Java icon"><span>Java</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/javascript" alt="JavaScript icon"><span>JavaScript</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/json" alt="JSON icon"><span>JSON</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/jupyter" alt="Jupyter icon"><span>Jupyter</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes icon"><span>Kubernetes</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/latex" alt="LaTeX icon"><span>LaTeX</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/letsencrypt" alt="Let's Encrypt icon"><span>Let's Encrypt</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/linux" alt="Linux icon"><span>Linux</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/mariadb" alt="MariaDB icon"><span>MariaDB</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/markdown" alt="Markdown icon"><span>Markdown</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/mysql" alt="MySQL icon"><span>MySQL</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js icon"><span>Node.js</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/numpy" alt="NumPy icon"><span>NumPy</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/opencv" alt="OpenCV icon"><span>OpenCV</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/openjdk/black" alt="OpenJDK icon"><span>OpenJDK</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/opentofu" alt="OpenTofu icon"><span>OpenTofu</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/overleaf" alt="Overleaf icon"><span>Overleaf</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/php" alt="PHP icon"><span>PHP</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/phpmyadmin" alt="phpMyAdmin icon"><span>phpMyAdmin</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/powershell" alt="PowerShell icon"><span>PowerShell</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/pypi" alt="PyPI icon"><span>PyPI</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/pypy" alt="PyPy icon"><span>PyPy</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/python" alt="Python icon"><span>Python</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/pytorch" alt="PyTorch icon"><span>PyTorch</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/lightning" alt="Lightning icon"><span>PyTorch Lightning</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/rust" alt="Rust icon"><span>Rust</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/scikitlearn" alt="scikit-learn icon"><span>scikit-learn</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/scipy" alt="SciPy icon"><span>SciPy</span></li><!--
-					---><li><img class="icon" src="https://img.icons8.com/color/64/sql" alt="SQL icon"><span>SQL</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/spaCy" alt="spaCy icon"><span>spaCy</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/svg" alt="SVG icon"><span>SVG</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/telegram" alt="Telegram icon"><span>Telegram</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/terraform" alt="Terraform icon"><span>Terraform</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/tqdm" alt="tqdm icon"><span>tqdm</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/typescript" alt="TypeScript icon"><span>TypeScript</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/unity/black" alt="Unity icon"><span>Unity</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/visualstudio" alt="Visual Studio icon"><span>Visual Studio</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/weblate" alt="Weblate icon"><span>Weblate</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/weightsandbiases" alt="Weights & Biases icon"><span>Weights & Biases</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/wireshark" alt="Wireshark icon"><span>Wireshark</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/yaml" alt="YAML icon"><span>YAML</span></li><!--
-			---></ul>
+				<p>I have worked with and gained experience with many programming languages and frameworks, during my career, studies and in my free time. I joined a few online programming contests, like the PROG-A-THON of my study association via, and the Advent of Code. I also contributed to open source projects in the form of bug reports, merge requests, translations, package maintenance, but also personal projects; see my GitHub/GitLab profiles for some things I worked on. Because of my broad knowledge in this field, learning new languages or technologies is a piece of cake for me!<br>Take a look at my profile below.</p>
 			</div>
 		</section><section>
 			<h2 class="">Career</h2>
@@ -341,9 +276,8 @@
 				<p class="subtitle">NAVARA · May 2023 - Now</p>
 				<p>As consultant at NAVARA Smart Platforms, I work on external products as DevOps or platform engineer. I do this while continuously improving and broadening my skill set. See the individual projects for details.</p>
 				<ul class="centered tags"><!--
-				---><li><img class="icon" src="https://cdn.simpleicons.org/microsoftazure" alt="Microsoft Azure icon"><span>Azure</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/microsoftazure" alt="Azure icon"><span>Azure</span></li><!--
 				---><li><img class="icon" src="https://cdn.simpleicons.org/terraform" alt="Terraform icon"><span>Terraform</span></li><!--
-				---><li><img class="icon" src="https://img.icons8.com/color/32/network" alt="Network icon"><span>Network Engineering</span></li><!--
 			---></ul>
 			</div>
 			<div class="card">
@@ -355,41 +289,51 @@
 				<p class="subtitle">Salarise · May 2023 - December 2023</p>
 				<p>I worked on improving and maintaining the borrowing platform of Salarise. I have delivered multiple new features facing either customers or the backoffice team, but also provided lifecycle management and improvements of the project setup.</p>
 				<ul class="centered tags"><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/dotnet" alt=".NET icon"><span>.NET</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/microsoftazure" alt="Azure icon"><span>Azure</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/azuredevops" alt="Azure DevOps icon"><span>Azure DevOps</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/azurefunctions" alt="Azure Functions icon"><span>Azure Functions</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/azurepipelines" alt="Azure Pipelines icon"><span>Azure Pipelines</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/csharp" alt="C# icon"><span>C#</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/css3" alt="CSS3 icon"><span>CSS</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/git" alt="Git icon"><span>Git</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/github" alt="GitHub icon"><span>GitHub</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/html5" alt="HTML5 icon"><span>HTML</span></li><!--
-					---><li><img class="icon" src="https://img.icons8.com/color/64/sql" alt="SQL icon"><span>T-SQL</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/typescript" alt="TypeScript icon"><span>TypeScript</span></li><!--
-				---></ul>
+				---><li><img class="icon" src="https://cdn.simpleicons.org/dotnet" alt=".NET icon"><span>.NET</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/microsoftazure" alt="Azure icon"><span>Azure</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/azuredevops" alt="Azure DevOps icon"><span>Azure DevOps</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/azurefunctions" alt="Azure Functions icon"><span>Azure Functions</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/azurepipelines" alt="Azure Pipelines icon"><span>Azure Pipelines</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/csharp" alt="C# icon"><span>C#</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/css3" alt="CSS3 icon"><span>CSS</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/git" alt="Git icon"><span>Git</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/github" alt="GitHub icon"><span>GitHub</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/html5" alt="HTML5 icon"><span>HTML</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/tsql" alt="Transact-SQL icon"><span>Transact-SQL</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/typescript" alt="TypeScript icon"><span>TypeScript</span></li><!--
+			---></ul>
 			</div>
 			<div class="card">
 				<h3>Platform engineer (via NAVARA)</h3>
 				<p class="subtitle">Topicus · May 2023 - December 2023</p>
 				<p>At Topicus Education, I have worked on the migration and infrastructure reorganization of the LMS product Eduarte. This included modernizing its Azure setup and deploying it with infrastructure as code using Terraform. I also worked on setting up repository CI/CD pipelines and helped perfecting a lot of other things.</p>
 				<ul class="centered tags"><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/microsoftazure" alt="Microsoft Azure icon"><span>Microsoft Azure</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/azurefunctions" alt="Azure Functions icon"><span>Azure Functions</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/argo" alt="ArgoCD icon"><span>ArgoCD</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/git" alt="Git icon"><span>Git</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/github" alt="GitHub icon"><span>GitHub</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/grafana" alt="Grafana icon"><span>Grafana</span></li><!--
-					---><li><img class="icon" src="https://img.icons8.com/color/64/java-coffee-cup-logo" alt="Java icon"><span>Java</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/json" alt="JSON icon"><span>JSON</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes icon"><span>Kubernetes</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/linux" alt="Linux icon"><span>Linux</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/opentofu" alt="OpenTofu icon"><span>OpenTofu</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/powershell" alt="PowerShell icon"><span>PowerShell</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/python" alt="Python icon"><span>Python</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/terraform" alt="Terraform icon"><span>Terraform</span></li><!--
-					---><li><img class="icon" src="https://cdn.simpleicons.org/yaml" alt="YAML icon"><span>YAML</span></li><!--
-				---></ul>
+				---><li><img class="icon" src="https://cdn.simpleicons.org/microsoftazure" alt="Azure icon"><span>Azure</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/azurefunctions" alt="Azure Functions icon"><span>Azure Functions</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/argo" alt="ArgoCD icon"><span>ArgoCD</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/git" alt="Git icon"><span>Git</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/github" alt="GitHub icon"><span>GitHub</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/grafana" alt="Grafana icon"><span>Grafana</span></li><!--
+				---><li><img class="icon" src="https://img.icons8.com/color/64/java-coffee-cup-logo" alt="Java icon"><span>Java</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/json" alt="JSON icon"><span>JSON</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/kubernetes" alt="Kubernetes icon"><span>Kubernetes</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/linux" alt="Linux icon"><span>Linux</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/opentofu" alt="OpenTofu icon"><span>OpenTofu</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/powershell" alt="PowerShell icon"><span>PowerShell</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/python" alt="Python icon"><span>Python</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/terraform" alt="Terraform icon"><span>Terraform</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/yaml" alt="YAML icon"><span>YAML</span></li><!--
+			---></ul>
+			</div>
+		</section><section>
+			<h2 class="">Certifications</h2>
+			<div class="card">
+				<h3>Azure Network Engineer Associate</h3>
+				<p class="subtitle">Microsoft · January 2024</p>
+				<p>I passed the certification process for ‘Microsoft Certified: Azure Network Engineer Associate’. This means I have the skills to create, maintain and advise on networking solutions withing Azure.<br>→ <a target="_blank" href="https://learn.microsoft.com/api/credentials/share/en-us/PhilipGoto/6FF4F441D43DA90D?sharingId=9C4DB119E668B802">View certification</a></p>
+				<ul class="centered tags"><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/microsoftazure" alt="Azure icon"><span>Azure</span></li><!--
+			---></ul>
 			</div>
 		</section><section>
 			<h2 class="">Education</h2>
@@ -399,11 +343,64 @@
 				<p>GPA: 7.6<br>Thesis: <a target="_blank" href="https://scripties.uba.uva.nl/search?id=record_52935">Active learning for imbalanced image classification</a></p>
 				<p>During my master I learned about many different machine learning models, how they work and how they are made exactly. I made, trained and tested many deep learning models in PyTorch/Lightning, and know how to create my own model from scratch. Because of my thesis I know a lot about active learning, which is very useful to apply when sparse on labeled data.</p>
 				<p>During my studies at the UvA, I was active at my study association via, where I joined the cooking, interaction (focused on including inactive members) and gaming committees. This allowed me to better develop my executive and financial skills.</p>
+				<ul class="centered tags"><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/anaconda" alt="Anaconda icon"><span>Anaconda</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/condaforge" alt="Conda-Forge icon"><span>Conda-Forge</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/latex" alt="LaTeX icon"><span>LaTeX</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/lightning" alt="Lightning icon"><span>PyTorch Lightning</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/numpy" alt="NumPy icon"><span>NumPy</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/overleaf" alt="Overleaf icon"><span>Overleaf</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/python" alt="Python icon"><span>Python</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/pytorch" alt="PyTorch icon"><span>PyTorch</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/weightsandbiases" alt="Weights & Biases icon"><span>Weights & Biases</span></li><!--
+			---></ul>
 			</div><div class="card">
 				<h3>BSc Computer Science</h3>
 				<p class="subtitle">Universiteit van Amsterdam · September 2015 - July 2019</p>
 				<p>GPA: 7.6<br>Thesis: Deep learning in bachelor education at the UvA</p>
 				<p>During my bachelor I extensively learned how to program properly, resulting in very broad knowledge and a structured way of thinking about problems. I now know how to program in more than 10 different languages, how to work in groups using the Agile framework Scrum, and how to make my own compiler. I also have a lot of knowledge about data structures, linear algebra, graphics, cryptography, network safety, and more!</p>
+				<ul class="centered tags"><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/androidstudio" alt="Android Studio icon"><span>Android Studio</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/c" alt="C icon"><span>C</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/c++" alt="C++ icon"><span>C++</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/googlecolab" alt="Colaboratory icon"><span>Colaboratory</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/condaforge" alt="Conda-Forge icon"><span>Conda-Forge</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/css3" alt="CSS3 icon"><span>CSS3</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/django" alt="Django icon"><span>Django</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/erlang" alt="Erlang icon"><span>Erlang</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/flask" alt="Flask icon"><span>Flask</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/git" alt="Git icon"><span>Git</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/github" alt="GitHub icon"><span>GitHub</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/gnubash" alt="Bash icon"><span>Bash</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/go" alt="Go icon"><span>Go</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/haskell" alt="Haskell icon"><span>Haskell</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/html5" alt="HTML5 icon"><span>HTML5</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/inkscape" alt="Inkscape icon"><span>Inkscape</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/java" alt="Java icon"><span>Java</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/javascript" alt="JavaScript icon"><span>JavaScript</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/json" alt="JSON icon"><span>JSON</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/jupyter" alt="Jupyter icon"><span>Jupyter</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/latex" alt="LaTeX icon"><span>LaTeX</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/letsencrypt" alt="Let's Encrypt icon"><span>Let's Encrypt</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/linux" alt="Linux icon"><span>Linux</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/mariadb" alt="MariaDB icon"><span>MariaDB</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/markdown" alt="Markdown icon"><span>Markdown</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/mysql" alt="MySQL icon"><span>MySQL</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/numpy" alt="NumPy icon"><span>NumPy</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/opencv" alt="OpenCV icon"><span>OpenCV</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/openjdk/black" alt="OpenJDK icon"><span>OpenJDK</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/overleaf" alt="Overleaf icon"><span>Overleaf</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/php" alt="PHP icon"><span>PHP</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/phpmyadmin" alt="phpMyAdmin icon"><span>phpMyAdmin</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/pypi" alt="PyPI icon"><span>PyPI</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/pypy" alt="PyPy icon"><span>PyPy</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/python" alt="Python icon"><span>Python</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/pytorch" alt="PyTorch icon"><span>PyTorch</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/scikitlearn" alt="scikit-learn icon"><span>scikit-learn</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/scipy" alt="SciPy icon"><span>SciPy</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/unity/black" alt="Unity icon"><span>Unity</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/wireshark" alt="Wireshark icon"><span>Wireshark</span></li><!--
+			---></ul>
 			</div><div class="card">
 				<h3>VWO Technasium NT+NG</h3>
 				<p class="subtitle">Keizer Karel College · 2009 - 2015</p>
@@ -414,13 +411,44 @@
 			<div class="card">
 				<h3>Personal projects</h3>
 				<p>I have written two plugins for the app GNOME Crosswords. These plug-ins scrape crosswords, cryptic crosswords, arrowwords and filippines from existing websites, convert them to the internally used ipuz format and display them in the apps interface. Currently, these plugins together support 30 different types of puzzles from Dutch and Flemish websites.<br>→ <a target="_blank" href="https://gitlab.gnome.org/philip.goto/puzzle-sets-keesing">Keesing puzzle sets</a> · <a target="_blank" href="https://gitlab.gnome.org/philip.goto/puzzle-sets-pzzl">pzzl puzzle sets</a></p>
+				<ul class="centered tags"><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/flathub" alt="Flathub icon"><span>Flathub</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/flatpak" alt="Flatpak icon"><span>Flatpak</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/meson" alt="Meson icon"><span>Meson</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/python" alt="Python icon"><span>Python</span></li><!--
+			---></ul>
 				<p>I have written a web interface for package management of Arch Linux. This locally deployed website lets the user visually discover, install, and remove packages through the browser.<br>→ <a target="_blank" href="https://github.com/flipflop97/WebMan">WebMan</a></p>
+				<ul class="centered tags"><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/archlinux" alt="Arch Linux icon"><span>Arch Linux</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/python" alt="Python icon"><span>Python</span></li><!--
+			---></ul>
 				<p>I have designed and published an icon pack of 550 icons for Linux with accompanying website. These are designed in the a combined style of Material Design and my own input.<br>→ <a target="_blank" href="https://flipflop97.github.io/Mato">Mato</a></p>
+				<ul class="centered tags"><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/css3" alt="CSS3 icon"><span>CSS</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/html5" alt="HTML5 icon"><span>HTML</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/inkscape" alt="Inkscape icon"><span>Inkscape</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/makefle" alt="Makefile icon"><span>Makefile</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/svg" alt="SVG icon"><span>SVG</span></li><!--
+			---></ul>
 				<p>I have written several Telegram bots. One example is a bot that can find available classrooms at the UvA that can be used as workspaces. Another one is a Telegram variant of the formerly popular Twitch Plays Pokémon.</p>
+				<ul class="centered tags"><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/python" alt="Python icon"><span>Python</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/telegram" alt="Telegram icon"><span>Telegram</span></li><!--
+			---></ul>
 			</div><div class="card">
 				<h3>Study-related projects</h3>
 				<p>During the Software Engineering course during my bachelor we worked in a group of 12 on a large project. This project aimed to be a working prototype of an improved and merged learning environment within the UvA, including managing assignments, (final) grades, schedules, etc. During this project we worked through the Agile method of Scrum.</p>
+				<ul class="centered tags"><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/django" alt="Django icon"><span>Django</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/mysql" alt="MySQL icon"><span>MySQL</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/python" alt="Python icon"><span>Python</span></li><!--
+			---></ul>
 				<p>During my bachelors Multimedia course, I worked in groups to create an Android app that can photograph and recognize a tabletop in the game of blackjack. The app can then track cards that have already occurred, and advise on the statistically best possible action.</p>
+				<ul class="centered tags"><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/Android" alt="Android icon"><span>Android</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/androidstudio" alt="Android Studio icon"><span>Android studio</span></li><!--
+				---><li><img class="icon" src="https://cdn.simpleicons.org/Gradle" alt="Gradle icon"><span>Gradle</span></li><!--
+			---></ul>
 			</div><div class="card">
 				<h3>Contributions</h3>
 				<p>I have made many contributions to open source projects. This is in the form of bug reports, merge requests for features and bug fixes, and Dutch translations. The bulk of the projects I have contributed to fall under the GNOME platform, but I have also contributed to some other projects. See my GitHub/GitLab profiles for things I worked on.</p>
