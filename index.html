@@ -17,14 +17,14 @@
 	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 	<style>
 		:root {
-			--background-color: #FAFAFA;
-			--background-pattern-color: #F4F4F4;
-			--card-color: #FFFFFF;
-			--text-color: rgba(0, 0, 0, 0.6);
-			--header-color: rgba(0, 0, 0, 0.85);
-			--border-color: rgba(0, 0, 0, 0.1);
-			--shadow-color: rgba(0, 0, 0, 0.15);
-			--link-color: #3584E4;
+			--background-color: oklch(0.9851 0 0);
+			--background-pattern-color: oklch(0.9672 0 0);
+			--card-color: oklch(1 0 0);
+			--text-color: oklch(0 0 0 / 0.6);
+			--header-color: oklch(0 0 0 / 0.85);
+			--border-color: oklch(0 0 0 / 0.1);
+			--shadow-color: oklch(0 0 0 / 0.15);
+			--link-color: oklch(0.6137 0.1643 255.34);
 
 			--hover-filter: brightness(95%);
 			--icon-filter: none;
@@ -143,6 +143,7 @@
 			overflow: hidden;
 			filter: var(--icon-filter);
 			font-weight: bold;
+			color: oklch(0 0 0 / 0.6);
 		}
 
 		.subtitle {
@@ -209,16 +210,16 @@
 
 		@media (prefers-color-scheme: dark) {
 			:root {
-				--background-color: #161616;
-				--background-pattern-color: #1E1E1E;
-				--card-color: #363636;
-				--text-color: rgba(255, 255, 255, 0.7);
-				--header-color: rgba(255, 255, 255, 1);
-				--border-color: rgba(255, 255, 255, 0.1);
-				--link-color: #99C1F1;
+				--background-color: oklch(0.2002 0 0);
+				--background-pattern-color: oklch(0.235 0 0);
+				--card-color: oklch(0.3329 0 0);
+				--text-color: oklch(1 0 0 / 0.7);
+				--header-color: oklch(1 0 0 / 1);
+				--border-color: oklch(1 0 0 / 0.1);
+				--link-color: oklch(0.7993 0.0809 253.32);
 
 				--hover-filter: contrast(90%) brightness(120%);
-				--icon-filter: contrast(25%) brightness(150%)
+				--icon-filter: invert(1) hue-rotate(180deg) contrast(70%) brightness(142%);
 			}
 		}
 
