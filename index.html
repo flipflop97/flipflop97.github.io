@@ -47,9 +47,21 @@
 
 		body {
 			background-color: var(--background-color);
-			background-image: linear-gradient(var(--background-pattern-color) 2px, transparent 2px), linear-gradient(90deg, var(--background-pattern-color) 2px, transparent 2px), linear-gradient(var(--background-pattern-color) 1px, transparent 1px), linear-gradient(90deg, var(--background-pattern-color) 1px, transparent 1px);
-			background-size: 48px 48px, 48px 48px, 12px 12px, 12px 12px;
-			background-position: -1px -1px, -1px -1px, -0.5px -0.5px, -0.5px -0.5px;
+			background-image:
+				linear-gradient(var(--background-pattern-color) 2px, transparent 2px),
+				linear-gradient(90deg, var(--background-pattern-color) 2px, transparent 2px),
+				linear-gradient(var(--background-pattern-color) 1px, transparent 1px),
+				linear-gradient(90deg, var(--background-pattern-color) 1px, transparent 1px);
+			background-size:
+				48px 48px,
+				48px 48px,
+				12px 12px,
+				12px 12px;
+			background-position:
+				calc(50% + 23px) -1px,
+				calc(50% + 23px) -1px,
+				calc(50% + 5.5px) -0.5px,
+				calc(50% + 5.5px) -0.5px;
 			background-repeat: repeat;
 			background-attachment: fixed;
 			margin: 96px 0;
