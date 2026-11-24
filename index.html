@@ -46,6 +46,15 @@
 			text-overflow: ellipsis;
 		}
 
+		:not(:focus-visible) {
+			outline: 2px solid transparent;
+			outline-offset: 4px;
+		}
+		:focus-visible {
+			outline: 2px solid var(--link-color);
+			outline-offset: 2px;
+		}
+
 		html {
 			interpolate-size: allow-keywords;
 
@@ -79,6 +88,7 @@
 		a {
 			color: var(--link-color);
 			transition: var(--default-transition);
+			border-radius: 0.01px; /* Unnoticeable but makes sure outline has rounded corners */
 		}
 
 		h1, h2, h3, h4, h5, h6 {
@@ -215,16 +225,16 @@
 
 		.avatar {
 			display: inline-block;
-			width: 256px;
-			height: 256px;
-			line-height: 256px;
+			width: 288px;
+			height: 288px;
+			line-height: 288px;
 			background-color: var(--border-color);
 			border-radius: 50%;
 			white-space: nowrap;
 			overflow: hidden;
 		}
 
-		@media (max-width: 256px) {
+		@media (max-width: 288px) {
 			.avatar {
 				transform: translate(calc(50vw - 50%));
 			}
@@ -272,7 +282,7 @@
 </head>
 <body>
 	<header>
-		<img class="avatar" srcset="https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=256&r=g, https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=384&r=g 1.5x, https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=512&r=g 2x, https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=640&r=g 2.5x, https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=768&r=g 3x" src="https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=256&r=g" alt="Portrait photo of Philip Goto">
+		<img class="avatar" srcset="https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=288&r=g, https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=432&r=g 1.5x, https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=576&r=g 2x, https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=720&r=g 2.5x, https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=864&r=g 3x" src="https://s.gravatar.com/avatar/8d25fc33ee930a75568e24f91e707466?s=288&r=g" alt="Portrait photo of Philip Goto">
 		<h1>Philip Goto</h1>
 		<p class="subtitle">Full-stack engineer focused on front-end</p>
 		<p>MSc Artificial Intelligence · BSc Computer Science</p>
